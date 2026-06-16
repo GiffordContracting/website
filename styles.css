@@ -135,15 +135,19 @@ p {
   color: var(--green);
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links button {
   text-decoration: none;
+  color: var(--green);
 }
 
 .nav-cta {
   background: var(--green);
-  color: white;
+  color: white !important;
   padding: 12px 18px;
   border-radius: 999px;
+  border: 0;
+  font-weight: 900;
 }
 
 .menu-toggle {
@@ -319,6 +323,10 @@ p {
   background: linear-gradient(135deg, var(--cream), #eadbb6);
 }
 
+.family-section {
+  background: white;
+}
+
 .rounded-img {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -337,7 +345,7 @@ p {
 }
 
 .project-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .project-card {
@@ -368,7 +376,7 @@ p {
 .promise-box {
   background:
     linear-gradient(rgba(6, 47, 35, 0.88), rgba(6, 47, 35, 0.88)),
-    url("images/truck.jpg");
+    url("Truck.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 34px;
@@ -451,7 +459,7 @@ p {
 .estimate {
   background:
     linear-gradient(rgba(248, 244, 232, 0.94), rgba(248, 244, 232, 0.94)),
-    url("images/hero-fence.jpg");
+    url("Fence2345234.avif");
   background-size: cover;
   background-position: center;
 }
@@ -554,6 +562,12 @@ p {
   color: white;
 }
 
+@media (max-width: 1080px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .split {
@@ -573,7 +587,6 @@ p {
   }
 
   .service-grid,
-  .project-grid,
   .review-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -624,14 +637,18 @@ p {
     display: flex;
   }
 
-  .nav-links a {
+  .nav-links a,
+  .nav-links button {
     width: 100%;
     padding: 16px;
     text-align: center;
     border-bottom: 1px solid rgba(6, 47, 35, 0.08);
+    background: white;
   }
 
-  .nav-cta {
+  .nav-links .nav-cta {
+    background: var(--green);
+    color: white !important;
     border-radius: 0;
   }
 
