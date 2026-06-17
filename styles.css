@@ -276,8 +276,7 @@ p { font-size: 1.08rem; }
 
 .service-card,
 .review-card,
-.estimate-card,
-.difference-card {
+.estimate-card {
   border-radius: var(--radius);
   box-shadow: 0 10px 28px rgba(0,0,0,0.08);
 }
@@ -410,6 +409,18 @@ p { font-size: 1.08rem; }
 
 .review-card p { margin-bottom: 18px; }
 
+.difference {
+  background: linear-gradient(135deg, var(--cream), #eadbb6);
+}
+
+.difference p {
+  margin-bottom: 16px;
+}
+
+.difference-btn {
+  margin-top: 14px;
+}
+
 .area-grid {
   margin-top: 36px;
   display: grid;
@@ -424,18 +435,6 @@ p { font-size: 1.08rem; }
   text-align: center;
   font-weight: 900;
   color: var(--green);
-}
-
-.difference {
-  background: linear-gradient(135deg, var(--cream), #eadbb6);
-}
-
-.difference p {
-  margin-bottom: 16px;
-}
-
-.difference-btn {
-  margin-top: 14px;
 }
 
 .estimate {
